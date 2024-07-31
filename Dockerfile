@@ -17,7 +17,7 @@ WORKDIR /app
 
 # Copy the Python script into the container
 COPY calc.py /app/
-
+COPY test.py /app/
 # Run dir to list files
 RUN powershell -Command "dir"
 
