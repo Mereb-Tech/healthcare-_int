@@ -43,5 +43,5 @@ def main():
         result = calculator(num1, num2, operation)
         print("Result:", result)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+    # main()
