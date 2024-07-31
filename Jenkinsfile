@@ -11,7 +11,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the repository containing the application code
-                 git branch: 'main', url: 'https://github.com/Mereb-Tech/healthcare-_int.git'
+                //removed my git here
+                 git branch: 'main', url: 'https://github.com/ '
             }
         }
 
@@ -27,8 +28,8 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    // Run unit tests or other relevant tests
-                    // Example: Use Docker to run tests
+
+                    // assumes we have unit test invation here
                     docker.image("${DOCKER_IMAGE}").inside {
                         sh 'python -m unittest discover'
                     }
