@@ -22,7 +22,7 @@ COPY calc.py /app/
 RUN powershell -Command "dir"
 
 # Set the entry point to run the Python script
-ENTRYPOINT ["python", "C:\\app\\calc.py"]
+ENTRYPOINT ["cmd"]
 
 
 # No ports need to be exposed as this is a CLI application
